@@ -1,0 +1,51 @@
+.container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+body {
+  font-family: Gruppo, sans-serif;
+  font-size: auto;
+}
+
+.header-about {
+  font-weight: bold;
+}
+
+.contact-icons > a {
+  box-shadow: 5px 5px 5px black;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+nav > a {
+  box-shadow: 5px 5px 5px black;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+img {
+  border-radius: 15px;
+}
+#debsfoto2:hover {
+  content: url("images/debsfoto2.JPG");
+}
+
+.fotoofdebs {
+  width: 250px;
+}
+
+@media (max-width: 500px) {
+  .container-about {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .fotoofdebs {
+    width: 100%;
+  }
+}

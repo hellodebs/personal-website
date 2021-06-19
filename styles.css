@@ -13,26 +13,29 @@ body {
 }
 
 .contact-icons > a {
-  box-shadow: 5px 5px 5px black;
-  color: black;
+  box-shadow: 5px 5px 5px gray;
+  color: gray;
   padding: 10px;
   text-decoration: none;
   border-radius: 2px;
 }
 
 nav > a {
-  box-shadow: 5px 5px 5px black;
-  color: black;
+  box-shadow: 5px 5px 5px gray;
+  color: gray;
   padding: 10px;
   text-decoration: none;
   border-radius: 2px;
+  font-size: 13px;
+}
+
+nav > a:hover {
+  color: pink;
 }
 
 img {
   border-radius: 15px;
-}
-#debsfoto2:hover {
-  content: url("images/debsfoto2.JPG");
+  box-shadow: 5px 5px 5px gray;
 }
 
 .fotoofdebs {

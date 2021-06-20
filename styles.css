@@ -1,6 +1,7 @@
 .container-about {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
 }
 
 body {
@@ -13,14 +14,23 @@ body {
   color: gray;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 h2 {
   font-family: "alex brush";
   font-size: 50px;
+  margin: 1px;
 }
 
 h3 {
   font-family: "alex brush";
   font-size: 35px;
+  margin: 1px;
+}
+
+.likes-dislikes {
   margin: 1px;
 }
 
@@ -66,7 +76,10 @@ nav > a:hover {
   background-size: cover;
   display: inline-block;
   border-radius: 15px;
-  box-shadow: 0 0 5px gray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-position: center;
 }
 .debsphoto:hover {
   background: url("images/debsphoto3.png") no-repeat white;
@@ -75,7 +88,7 @@ nav > a:hover {
 
 @media (max-width: 500px) {
   .container-about {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 400px) {

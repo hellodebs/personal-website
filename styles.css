@@ -3,6 +3,25 @@ body {
   background-color: #f8f7ff;
   color: #525257;
   padding: 15px;
+  margin: 0;
+}
+
+#personal-website {
+  display: grid;
+  grid-template-areas: "header" "main";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+#personal-website > header {
+  grid-area: "header";
+}
+
+#personal-website > main {
+  grid-area: "main";
+  padding: 15px 5px 10px 5px;
+  overflow: auto;
 }
 
 h1 {
@@ -22,6 +41,11 @@ h3 {
   margin-bottom: 5px;
 }
 
+.headings-about {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+}
+
 .container-about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -33,8 +57,9 @@ ul {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 
 nav > a {
@@ -86,6 +111,9 @@ nav > a:hover {
 @media (max-width: 500px) {
   .container-about {
     grid-template-columns: 1fr;
+  }
+  .headings-about {
+    grid-template-columns: none;
   }
 }
 @media (max-width: 430px) {
